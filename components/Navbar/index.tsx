@@ -21,13 +21,27 @@ const NavWrapper = styled.div`
   }
 `
 
-const NavLogo = styled.img`
-  height: 45px;
+const NavHeader = styled.div`
+  display: flex;
+  align-items: center;
+  gap: .5rem;
   cursor: pointer;
+`
+
+const NavBrand = styled.h1`
+  font-size: 1.6rem;
+  font-weight: 600;
+`
+
+const NavLogo = styled.img`
+  height: 32px;
+  width: 16px;
 `
 
 const NavToggle = styled(NavLogo)`
   height: 20px;
+  width: 28px;
+  cursor: pointer;
 
   @media screen and (min-width: 1024px) {
     display: none;
@@ -80,7 +94,11 @@ export default function Navbar() {
     <Nav>
       <NavContainer>
         <NavWrapper>
-          <NavLogo src="/uangmu.png" />
+          <NavHeader>
+            <NavLogo src="/uangmu.svg" />
+            <NavBrand>uangmu</NavBrand>
+          </NavHeader>
+
           <NavToggle src="/menu.svg" />
 
           <NavMenu>
