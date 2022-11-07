@@ -15,6 +15,16 @@ export const Paragraph = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+
+  @media screen and (min-width: 768px) {
+    &.half {
+      width: 50%;
+    }
+  }
+
+  &.left {
+    text-align: left;
+  }
 `
 
 export const Button = styled.button`
