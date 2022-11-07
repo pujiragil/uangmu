@@ -29,7 +29,7 @@ const NavHeader = styled.div`
 `
 
 const NavBrand = styled.h1`
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 600;
 `
 
@@ -61,7 +61,7 @@ const NavMenu = styled.div`
 const NavItem = styled.a`
   text-decoration: none;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 18px;
   cursor: pointer;
 `
 

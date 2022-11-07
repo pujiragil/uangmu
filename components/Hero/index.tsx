@@ -71,7 +71,7 @@ const HeroExperienceWrapper = styled.div`
   @media screen and (min-width: 1024px) {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
   }
 `;
 

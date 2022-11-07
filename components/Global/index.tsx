@@ -8,6 +8,7 @@ export const Title = styled.h1`
 
   @media screen and (min-width: 768px) {
     font-size: 54px;
+    line-height: 72px;
   }
 `
 
