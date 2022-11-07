@@ -36,10 +36,11 @@ const ServiceCard = styled.div`
   gap: 1rem;
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
+  box-shadow: 55px 10px 50px rgba(0, 0, 0, 0.06);
   cursor: pointer;
 
   &:hover, &:active {
-    box-shadow: 55px 10px 50px rgba(0, 0, 0, 0.06);
+    box-shadow: 55px 10px 50px rgba(195, 234, 216, 0.7);
   }
 `
 
