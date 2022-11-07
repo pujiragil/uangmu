@@ -19,9 +19,14 @@ const ServiceWrapper = styled.div`
   align-items: center;
   text-align: center;
   gap: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 20px;
+  }
 `
 
 const ServiceCardWrapper = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,6 +34,7 @@ const ServiceCardWrapper = styled.div`
 `
 
 const ServiceCard = styled.div`
+  width: 100%;
   padding: 60px 20px;
   display: flex;
   flex-direction: column;
@@ -48,6 +54,10 @@ const ServiceImage = styled.img`
   width: 100px;
   height: auto;
   object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    width: 416px;
+  }
 `
 
 const ServiceTitle = styled.h2`

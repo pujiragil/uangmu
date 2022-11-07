@@ -118,6 +118,11 @@ const HeroImage = styled.img`
   @media screen and (min-width: 768px) {
     width: 584px;
   }
+
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+    object-fit: scale-down;
+  }
 `;
 
 export default function HeroSection() {
