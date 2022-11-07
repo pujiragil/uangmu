@@ -3,6 +3,7 @@ import { Title } from "../Global";
 
 const Service = styled.section`
   background: #fafafa;
+  color: #1D191F;
 `;
 
 const ServiceContainer = styled.div`

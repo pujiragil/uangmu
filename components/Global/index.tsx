@@ -28,16 +28,24 @@ export const Paragraph = styled.p`
   }
 `
 
-export const Button = styled.button`
+interface ButtonProps {
+  primary: boolean;
+}
+
+export const Button = styled.button<ButtonProps>`
+  cursor: pointer;
+  min-width: 240px;
   width: fit-content;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   padding: 20px 40px;
   border-radius: 999px;
-  border: none;
+  border: ${({ primary }) => primary ? "none" : "1px solid #1D191F"};
   outline: none;
-  background: #000;
+  color: ${({ primary }) => primary ? "#FAFAFA" : "#1D191F"};
+  background: ${({ primary }) => primary ? "#1D191F" : "transparent"};
 `
 
 export const ButtonIcon = styled.img`
@@ -46,7 +54,6 @@ export const ButtonIcon = styled.img`
 `
 
 export const ButtonText = styled.p`
-  color: white;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;

@@ -62,6 +62,7 @@ const HeroButtonWrapper = styled.div`
 
 const HeroExperienceWrapper = styled.div`
   display: none;
+  color: #1D191F;
 
   @media screen and (min-width: 768px) {
     display: grid;
@@ -137,7 +138,7 @@ export default function HeroSection() {
               and super fast.
             </Paragraph>
             <HeroButtonWrapper>
-              <Button>
+              <Button primary={true}>
                 <ButtonIcon src="/cloud.svg" />
                 <ButtonText>Download app</ButtonText>
               </Button>
