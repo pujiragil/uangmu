@@ -105,7 +105,6 @@ const HeroExperienceLogo = styled.img`
 
 const HeroImageWrapper = styled.div`
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
 `;
@@ -123,6 +122,10 @@ const HeroImage = styled.img`
   @media screen and (min-width: 1024px) {
     width: 100%;
     object-fit: scale-down;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 584px;
   }
 `;
 

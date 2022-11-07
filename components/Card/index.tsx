@@ -11,6 +11,10 @@ const CardContainer = styled.div`
   min-height: 100vh;
   max-width: 1920px;
   margin: 0 auto;
+
+  @media screen and (min-width: 1024px) {
+    min-height: auto;
+  }
 `;
 
 const CardWrapper = styled.div`
@@ -20,6 +24,10 @@ const CardWrapper = styled.div`
   text-align: center;
   width: 100%;
   gap: 100px;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 20px;
+  }
 `;
 
 const CardContentWrapper = styled.div`
@@ -39,6 +47,10 @@ const CardDesc = styled.p<DescProps>`
   line-height: 23px;
   font-weight: ${({ subtitle }) => (subtitle ? "600" : "400")};
   text-transform: ${({ subtitle }) => (subtitle ? "uppercase" : "none")};
+
+  @media screen and (min-width: 1024px) {
+    width: 50%;
+  }
 `;
 
 
@@ -52,7 +64,7 @@ export default function CardSection() {
             <CardDesc subtitle={true}>
               available at google and ios app store
             </CardDesc>
-            <Title>Built for the next generation of small business</Title>
+            <Title className="half">Built for the next generation of small business</Title>
             <CardDesc subtitle={false}>
               Hopscotch is an all-in-one payments platform where businesses can
               connect, transact, and grow together.

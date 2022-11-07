@@ -10,6 +10,10 @@ const ServiceContainer = styled.div`
   min-height: 100vh;
   max-width: 1920px;
   margin: 0 auto;
+
+  @media screen and (min-width: 1024px) {
+    min-height: auto;
+  }
 `;
 
 const ServiceWrapper = styled.div`

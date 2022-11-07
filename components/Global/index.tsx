@@ -10,6 +10,14 @@ export const Title = styled.h1`
     font-size: 54px;
     line-height: 72px;
   }
+
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+
+    &.half {
+      width: 60%;
+    }
+  }
 `
 
 export const Paragraph = styled.p`
@@ -42,7 +50,7 @@ export const Button = styled.button<ButtonProps>`
   gap: 10px;
   padding: 20px 40px;
   border-radius: 999px;
-  border: ${({ primary }) => primary ? "none" : "1px solid #1D191F"};
+  border: 1px solid #1D191F;
   outline: none;
   color: ${({ primary }) => primary ? "#FAFAFA" : "#1D191F"};
   background: ${({ primary }) => primary ? "#1D191F" : "transparent"};
