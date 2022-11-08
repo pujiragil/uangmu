@@ -29,6 +29,10 @@ const ServiceWrapper = styled.div`
     padding: 100px 20px;
     gap: 200px;
   }
+
+  @media screen and (min-width: 1024px) {
+    padding: 100px 2rem;
+  }
 `;
 
 const ServiceCardWrapper = styled.div`

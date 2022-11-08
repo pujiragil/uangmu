@@ -13,8 +13,13 @@ const WhyContainer = styled.div`
   margin: 0 auto;
   padding: 80px 16px;
 
+  @media screen and (min-width: 768px) {
+    padding: 100px 20px;
+  }
+
   @media screen and (min-width: 1024px) {
     padding: 100px 2rem;
+    min-height: auto;
   }
 `
 
