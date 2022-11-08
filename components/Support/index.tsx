@@ -9,6 +9,10 @@ const SupportContainer = styled.div`
   max-width: 1440px;
   min-height: 100vh;
   margin: 0 auto;
+
+  @media screen and (min-width: 1024px) {
+    min-height: auto;
+  }
 `
 
 const SupportWrapper = styled.div`
@@ -16,24 +20,52 @@ const SupportWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 20px;
+    gap: 100px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 100px 2rem;
+    flex-direction: row;
+  }
 `
 
 const ContentWrapper = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 60px;
+
+  @media screen and (min-width: 1024px) {
+    order: 1;
+  }
 `
 
 const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const Title = styled.h3`
   font-size: 40px;
   font-weight: 600;
   line-height: 52px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 54px;
+    line-height: 72px;
+  }
 `
 
 const Paragraph = styled.p`
@@ -61,12 +93,25 @@ const ImageWrapper = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 1024px) {
+    order: 2;
+    justify-content: flex-end;
+  }
 `
 
 const Image = styled.img`
   width: 100%;
   height: auto;
   object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    width: 624px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 438px;
+  }
 `
 
 export default function SupportSection() {
