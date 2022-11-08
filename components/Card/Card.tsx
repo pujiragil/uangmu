@@ -6,6 +6,10 @@ const CardWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 100px;
+
+  @media screen and (min-width: 1440px) {
+    gap: 300px;
+  }
 `;
 
 interface CardItemProps {
@@ -31,12 +35,20 @@ const CardItem = styled.div<CardItemProps>`
   }
 `;
 
-const ContentWrapper = styled.div`
+interface ContentWrapperProps {
+  primary: boolean;
+}
+
+const ContentWrapper = styled.div<ContentWrapperProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 60px;
+
+  @media screen and (min-width: 1024px) {
+    order: ${({ primary }) => primary ? 1 : 2};
+  }
 `;
 
 const Content = styled.div`
@@ -89,10 +101,19 @@ const ContentDesc = styled.p`
   }
 `;
 
-const ImageWrapper = styled.div`
+interface ImageWrapperProps {
+  primary: boolean;
+}
+
+const ImageWrapper = styled.div<ImageWrapperProps>`
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
+
+  @media screen and (min-width: 1024px) {
+    order: ${({ primary }) => primary ? 2 : 1};
+  }
 `;
 
 const Image = styled.img`
@@ -108,22 +129,36 @@ const Image = styled.img`
     height: 460px;
     object-fit: scale-down;
   }
+
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    top: -55%;
+    width: auto;
+    height: 670px;
+  }
 `;
 
 export default function Cards() {
   return (
     <CardWrapper>
-      <Card cardTitle={"Easy payments and invoicing"} cardBg={"#F8E7DF"} cardImgLink={"/images/card-1.png"} /> 
-      <Card cardTitle={"Smart dashboard, powerful integrations"} cardBg={"#EEF2FB"} cardImgLink={"/images/card-2.png"} /> 
-      <Card cardTitle={"Better cash control with Upay Flow"} cardBg={"#E1F5EB"} cardImgLink={"/images/card-3.png"} /> 
+      <Card primary={true} cardTitle={"Easy payments and invoicing"} cardBg={"#F8E7DF"} cardImgLink={"/images/card-1.png"} /> 
+      <Card primary={false} cardTitle={"Smart dashboard, powerful integrations"} cardBg={"#EEF2FB"} cardImgLink={"/images/card-2.png"} /> 
+      <Card primary={true} cardTitle={"Better cash control with Upay Flow"} cardBg={"#E1F5EB"} cardImgLink={"/images/card-3.png"} /> 
     </CardWrapper>
   )
 }
 
-function Card({ cardTitle, cardBg, cardImgLink }) {
+interface CardProps {
+  primary: boolean;
+  cardTitle: string;
+  cardBg: string;
+  cardImgLink: string;
+}
+
+function Card({ primary, cardTitle, cardBg, cardImgLink }: CardProps) {
   return (
     <CardItem background={cardBg}>
-      <ContentWrapper>
+      <ContentWrapper primary={primary}>
         <Content>
           <ContentTitle>{cardTitle}</ContentTitle>
           <ContentDesc>
@@ -145,7 +180,7 @@ function Card({ cardTitle, cardBg, cardImgLink }) {
         </Content>
       </ContentWrapper>
 
-      <ImageWrapper>
+      <ImageWrapper primary={primary}>
         <Image src={cardImgLink} />
       </ImageWrapper>
     </CardItem>

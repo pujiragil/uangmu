@@ -5,7 +5,7 @@ const Nav = styled.div`
 `;
 
 const NavContainer = styled.nav`
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto;
 `;
 
