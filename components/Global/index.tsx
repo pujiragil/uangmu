@@ -25,15 +25,26 @@ export const Paragraph = styled.p`
   font-size: 18px;
   line-height: 23px;
 
+  &.left {
+    text-align: left;
+  }
+
   @media screen and (min-width: 768px) {
     &.half {
       width: 50%;
     }
+
+    &.why {
+      width: 70%;
+    }
   }
 
-  &.left {
-    text-align: left;
+  @media screen and (min-width: 1024px) {
+    &.why {
+      width: 40%;
+    }
   }
+
 `
 
 interface ButtonProps {

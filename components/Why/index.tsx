@@ -12,6 +12,10 @@ const WhyContainer = styled.div`
   min-height: 100vh;
   margin: 0 auto;
   padding: 80px 16px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 100px 2rem;
+  }
 `
 
 const WhyWrapper = styled.div`
@@ -40,11 +44,10 @@ export default function WhySection() {
         <WhyWrapper>
           <Content>
             <Title>Why Uangmu</Title>
-            <Paragraph>Please add a amount an account with whom you want to send your money and we will keep it very safe.</Paragraph>
+            <Paragraph className="why">Please add a amount an account with whom you want to send your money and we will keep it very safe.</Paragraph>
           </Content>
-          <Content gap="2rem">
-            <Whys />
-          </Content>
+          
+          <Whys />
         </WhyWrapper>
       </WhyContainer>
     </Why>

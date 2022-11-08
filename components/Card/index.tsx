@@ -28,6 +28,10 @@ const CardWrapper = styled.div`
   @media screen and (min-width: 768px) {
     padding: 100px 20px;
   }
+
+  @media screen and (min-width: 1024px) {
+    padding: 100px 2rem;
+  }
 `;
 
 const CardContentWrapper = styled.div`
