@@ -1,4 +1,5 @@
 import CardSection from "../components/Card";
+import ContactSection from "../components/Contact";
 import HeroSection from "../components/Hero";
 import ServiceSection from "../components/Service";
 import SupportSection from "../components/Support";
@@ -12,6 +13,7 @@ export default function Home() {
       <CardSection />
       <WhySection />
       <SupportSection />
+      <ContactSection />
     </>
   )
 }
