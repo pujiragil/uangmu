@@ -126,7 +126,8 @@ const Image = styled.img`
   }
 
   @media screen and (min-width: 1024px) {
-    height: 460px;
+    height: auto;
+    width: 100%;
     object-fit: scale-down;
   }
 

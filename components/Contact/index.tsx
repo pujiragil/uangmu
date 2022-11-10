@@ -22,6 +22,11 @@ const ContactWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 100px;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    gap: 2rem;
+  }
 `
 
 interface ContentProps {
@@ -29,6 +34,7 @@ interface ContentProps {
   justifyContent?: string;
   flexDirection?: string;
   gap?: string;
+  xlSize?: string;
 }
 
 const Content = styled.div<ContentProps>`
@@ -38,6 +44,10 @@ const Content = styled.div<ContentProps>`
   align-items: ${({ alignItems }) => alignItems ? alignItems : "center" };
   justify-content: ${({ justifyContent }) => justifyContent ? justifyContent : "center"};
   gap: ${({ gap }) => gap ? gap : "unset"};
+
+  @media screen and (min-width: 1024px) {
+    justify-content: ${({ xlSize }) => xlSize && xlSize};
+  }
 `
 
 const TextWrapper = styled.div`
@@ -51,6 +61,10 @@ const Image = styled.img`
   width: 100%;
   height: auto;
   object-fit: cover;
+
+  @media screen and (min-width: 1024px) {
+    width: 80%;
+  }
 `
 
 const Title = styled.h2`
@@ -70,7 +84,7 @@ export default function ContactSection() {
     <Contact>
       <ContactContainer>
         <ContactWrapper>
-          <Content>
+          <Content xlSize="flex-start">
             <Image src="/contact.svg" />
           </Content>
           <Content justifyContent="flex-start" alignItems="flex-start" flexDirection="column" gap="60px">
