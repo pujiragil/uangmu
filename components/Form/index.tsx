@@ -135,7 +135,7 @@ const Checkbox = styled.label`
     -ms-transform: rotate(45deg) scale(1);
     transform: rotate(45deg) scale(1);
     opacity: 1;
-    left: 7px;
+    left: 32%;
     top: 2px;
     width: 6px;
     height: 12px;

@@ -12,7 +12,7 @@ const ContactContainer = styled.div`
   margin: 0 auto;
 
   @media screen and (min-width: 1024px) {
-    min-width: auto;
+    min-height: auto;
   }
 `
 
@@ -23,9 +23,18 @@ const ContactWrapper = styled.div`
   flex-direction: column;
   gap: 100px;
 
+  @media screen and (min-width: 768px) {
+    padding: 100px 20px;
+  }
+
   @media screen and (min-width: 1024px) {
+    padding: 100px 2rem;
     flex-direction: row;
     gap: 2rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    gap: 60px;
   }
 `
 
@@ -64,6 +73,10 @@ const Image = styled.img`
 
   @media screen and (min-width: 1024px) {
     width: 80%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 100%;
   }
 `
 
