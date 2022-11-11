@@ -99,7 +99,7 @@
   `;
 
   export default function FaqSection() {
-    const [open, setOpen] = useState(2);
+    const [open, setOpen] = useState(0);
 
     const handleOpen = (id: number) => {
       if (open === id) {

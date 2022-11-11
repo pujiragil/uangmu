@@ -1,5 +1,6 @@
 import CardSection from "../components/Card";
 import ContactSection from "../components/Contact";
+import EmailSection from "../components/Email";
 import FaqSection from "../components/Faq";
 import HeroSection from "../components/Hero";
 import PartnersSection from "../components/Partners";
@@ -20,6 +21,7 @@ export default function Home() {
       <PartnersSection />
       <QuoteSection />
       <FaqSection />
+      <EmailSection />
     </>
   )
 }
