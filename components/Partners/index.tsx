@@ -41,6 +41,11 @@ const PartnersImageWrapper = styled.div`
 
   @media screen and (min-width: 1024px) {
     grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    gap: 2rem;
   }
 `
 
