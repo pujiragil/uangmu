@@ -2,6 +2,7 @@ import CardSection from "../components/Card";
 import ContactSection from "../components/Contact";
 import EmailSection from "../components/Email";
 import FaqSection from "../components/Faq";
+import FooterSection from "../components/Footer";
 import HeroSection from "../components/Hero";
 import PartnersSection from "../components/Partners";
 import QuoteSection from "../components/Quote";
@@ -22,6 +23,7 @@ export default function Home() {
       <QuoteSection />
       <FaqSection />
       <EmailSection />
+      <FooterSection />
     </>
   )
 }
