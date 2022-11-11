@@ -53,6 +53,7 @@ const FormTextarea = styled.textarea`
   outline: none;
   height: 120px;
   width: 100%;
+  background: transparent;
 
   &::placeholder {
     opacity: 1;
