@@ -26,6 +26,10 @@ export const GlobalStyle = createGlobalStyle`
     background: transparent;
     border: 1px solid #FAFAFA;
     opacity: 1;
+
+    @media screen and (min-width: 1024px) {
+      border-width: 2px;
+    }
   }
 
   .swiper-pagination .swiper-pagination-bullet-active {
