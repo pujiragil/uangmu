@@ -28,9 +28,11 @@ const FooterWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: flex-start;
+    gap: 80px;
   }
 
   @media screen and (min-width: 1024px) {
+    gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 `;
@@ -89,6 +91,7 @@ const FooterSocial = styled.div`
 
   @media screen and (min-width: 768px) {
     width: 100%;
+    gap: 20px;
   }
 `;
 

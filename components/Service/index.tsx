@@ -107,12 +107,8 @@ const ServiceImage = styled.img`
 `;
 
 const ServiceTitle = styled.h2`
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
-
-  @media screen and (min-width: 768px) {
-    font-size: 1.8rem;
-  }
 `;
 
 const ServiceDesc = styled.p`
@@ -120,17 +116,13 @@ const ServiceDesc = styled.p`
 
   @media screen and (min-width: 768px) {
     width: 70%;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 `;
 
 const ServiceHighlight = styled.p`
   font-size: 1.1rem;
   font-weight: 700;
-
-  @media screen and (min-width: 768px) {
-    font-size: 1.5rem;
-  }
 `;
 
 export default function ServiceSection() {

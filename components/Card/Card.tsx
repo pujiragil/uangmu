@@ -93,7 +93,7 @@ const ContentDesc = styled.p`
   font-weight: 400;
 
   @media screen and (min-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   @media screen and (min-width: 1024px) {
@@ -127,15 +127,15 @@ const Image = styled.img`
 
   @media screen and (min-width: 1024px) {
     height: auto;
-    width: 100%;
+    width: 80%;
     object-fit: scale-down;
   }
 
   @media screen and (min-width: 1440px) {
     position: absolute;
-    top: -55%;
+    top: -65%;
     width: auto;
-    height: 670px;
+    height: 650px;
   }
 `;
 

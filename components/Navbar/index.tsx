@@ -61,8 +61,12 @@ const NavMenu = styled.div`
 const NavItem = styled.a`
   text-decoration: none;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1rem;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.1rem;
+  }
 `
 
 const NavButtonWrapper = styled.div`
@@ -87,6 +91,10 @@ const NavButton = styled.button`
   background: #1D191F;
   padding: 14px 24px;
   border-radius: 999px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.1rem;
+  }
 `
 
 export default function Navbar() {

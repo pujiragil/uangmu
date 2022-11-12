@@ -38,14 +38,14 @@ export const Paragraph = styled.p`
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
     &.subparagraph {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
 
     &.half {
-      width: 50%;
+      width: 60%;
     }
 
     &.why {
@@ -99,10 +99,10 @@ export const ButtonText = styled.p`
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
     &.sub-button {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
   }
 `;

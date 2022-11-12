@@ -38,7 +38,7 @@ const FormInput = styled.input`
 
   @media screen and (min-width: 768px) {
     width: calc(50% - 16px);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `
 
@@ -70,7 +70,7 @@ const FormTextarea = styled.textarea`
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `
 
@@ -86,7 +86,7 @@ const AgreementText = styled.p`
   font-weight: 400;
 
   @media screen and (min-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `
 
@@ -166,7 +166,7 @@ const FormSubmit = styled.input`
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `
 

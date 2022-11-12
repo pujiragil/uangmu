@@ -94,7 +94,7 @@ const Paragraph = styled.p`
   font-weight: 400;
 
   @media screen and (min-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `
 

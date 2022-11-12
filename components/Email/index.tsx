@@ -44,7 +44,7 @@ const TitleEmail = styled.h3`
   font-weight: 700;
 
   @media screen and (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 42px;
   }
 
@@ -85,7 +85,7 @@ const EmailInput = styled.input`
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `
 
