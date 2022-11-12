@@ -52,7 +52,7 @@ const CardDesc = styled.p<DescProps>`
   text-transform: ${({ subtitle }) => (subtitle ? "uppercase" : "none")};
 
   @media screen and (min-width: 768px) {
-    font-size: 18px;
+    font-size: 1.2rem;
   }
 
   @media screen and (min-width: 1024px) {

@@ -80,9 +80,7 @@ const ContentTitle = styled.h3`
   font-weight: 400;
 
   @media screen and (min-width: 768px) {
-    font-size: 42px;
-    line-height: 52px;
-    width: 60%;
+    font-size: 2rem;
   }
 
   @media screen and (min-width: 1024px) {
@@ -95,7 +93,7 @@ const ContentDesc = styled.p`
   font-weight: 400;
 
   @media screen and (min-width: 768px) {
-    font-size: 18px;
+    font-size: 1.2rem;
   }
 
   @media screen and (min-width: 1024px) {

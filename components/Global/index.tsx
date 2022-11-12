@@ -23,22 +23,26 @@ export const Title = styled.h1`
       width: 60%;
     }
   }
-`
+`;
 
 export const Paragraph = styled.p`
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.1rem;
 
   &.subparagraph {
     font-size: 1rem;
-  }  
+  }
 
   &.left {
     text-align: left;
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 18px;
+    font-size: 1.2rem;
+
+    &.subparagraph {
+      font-size: 1.2rem;
+    }
 
     &.half {
       width: 50%;
@@ -54,8 +58,7 @@ export const Paragraph = styled.p`
       width: 40%;
     }
   }
-
-`
+`;
 
 interface ButtonProps {
   primary: boolean;
@@ -71,11 +74,11 @@ export const Button = styled.button<ButtonProps>`
   gap: 10px;
   padding: 20px 40px;
   border-radius: 999px;
-  border: 1px solid #1D191F;
+  border: 1px solid #1d191f;
   outline: none;
-  color: ${({ primary }) => primary ? "#FAFAFA" : "#1D191F"};
-  background: ${({ primary }) => primary ? "#1D191F" : "transparent"};
-`
+  color: ${({ primary }) => (primary ? "#FAFAFA" : "#1D191F")};
+  background: ${({ primary }) => (primary ? "#1D191F" : "transparent")};
+`;
 
 export const ButtonIcon = styled.img`
   width: 24px;
@@ -85,13 +88,21 @@ export const ButtonIcon = styled.img`
     width: 28px;
     height: 28px;
   }
-`
+`;
 
 export const ButtonText = styled.p`
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 400;
 
   &.sub-button {
     font-size: 1rem;
   }
-`
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.2rem;
+
+    &.sub-button {
+      font-size: 1.2rem;
+    }
+  }
+`;

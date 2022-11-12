@@ -45,6 +45,10 @@ const QuoteIcon = styled.img`
   width: 40px;
   height: auto;
   object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    width: 48px;
+  }
 `
 
 const QuoteContent = styled.div`
@@ -58,6 +62,10 @@ const QuoteContent = styled.div`
   & > .author {
     margin-bottom: 12px;
     font-weight: 700;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.2rem;
   }
 `
 

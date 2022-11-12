@@ -92,6 +92,10 @@ const Title = styled.h2`
 const Paragraph = styled.p`
   font-size: 1rem;
   font-weight: 400;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.2rem;
+  }
 `
 
 export default function ContactSection() {

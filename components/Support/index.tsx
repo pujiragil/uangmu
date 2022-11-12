@@ -62,7 +62,7 @@ const Title = styled.h3`
   font-weight: 600;
 
   @media screen and (min-width: 768px) {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 `
 
@@ -71,7 +71,7 @@ const Paragraph = styled.p`
   font-weight: 400;
 
   @media screen and (min-width: 768px) {
-    font-size: 18px;
+    font-size: 1.2rem;
   }
 `
 
@@ -88,7 +88,7 @@ const SupportButton = styled.button`
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
-    font-size: 18px;
+    font-size: 1.2rem;
   }
 `
 

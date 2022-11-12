@@ -85,7 +85,7 @@ const WhyDesc = styled.p`
   font-weight: 400;
 
   @media screen and (min-width: 768px) {
-    font-size: 18px;
+    font-size: 1.2rem;
   }
 `;
 
@@ -94,7 +94,7 @@ const WhyHighlight = styled.p`
   font-weight: 700;
 
   @media screen and (min-width: 768px) {
-    font-size: 20px;
+    font-size: 1.3rem;
   }
 `;
 

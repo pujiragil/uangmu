@@ -38,6 +38,7 @@ const FormInput = styled.input`
 
   @media screen and (min-width: 768px) {
     width: calc(50% - 16px);
+    font-size: 1.2rem;
   }
 `
 
@@ -67,6 +68,10 @@ const FormTextarea = styled.textarea`
       color: #A9A547;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.2rem;
+  }
 `
 
 const FormAgreement = styled.div`
@@ -79,6 +84,10 @@ const FormAgreement = styled.div`
 const AgreementText = styled.p`
   font-size: 1rem;
   font-weight: 400;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.2rem;
+  }
 `
 
 const Checkbox = styled.label`
@@ -155,6 +164,10 @@ const FormSubmit = styled.input`
   border: none;
   outline: none;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.2rem;
+  }
 `
 
 
