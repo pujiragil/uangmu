@@ -56,7 +56,7 @@ const TitleEmail = styled.h3`
 const EmailField = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 40px;
   height: fit-content;
 
   @media screen and (min-width: 768px) {

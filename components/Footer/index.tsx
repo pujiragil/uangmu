@@ -59,21 +59,17 @@ const FooterSocial = styled.div`
   width: 70%;
 
   & > .title {
-    font-size: 40px;
-    line-height: 52px;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
 
     @media screen and (min-width: 768px) {
       font-size: 20px;
-      font-weight: 600;
-      line-height: 24px;
     }
   }
 
   & > p {
     font-size: 1rem;
     font-weight: 400;
-    line-height: 20px;
   }
 
   & > .social-wrapper {
@@ -103,9 +99,8 @@ const FooterMenu = styled.div`
   width: 70%;
 
   & > .title {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
+    font-size: 1.2rem;
+    font-weight: 700;
   }
 
   & > .content-wrapper {
@@ -116,7 +111,6 @@ const FooterMenu = styled.div`
     & > p {
       font-size: 1rem;
       font-weight: 400;
-      line-height: 20px;
     }
   }
 

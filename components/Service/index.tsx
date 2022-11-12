@@ -107,7 +107,7 @@ const ServiceImage = styled.img`
 `;
 
 const ServiceTitle = styled.h2`
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 700;
 
   @media screen and (min-width: 768px) {
@@ -120,8 +120,7 @@ const ServiceDesc = styled.p`
 `;
 
 const ServiceHighlight = styled.p`
-  font-size: 1rem;
-  line-height: 23px;
+  font-size: 1.1rem;
   font-weight: 700;
 `;
 

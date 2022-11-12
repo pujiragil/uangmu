@@ -71,9 +71,8 @@ const Icon = styled.img`
 `;
 
 const WhyTitle = styled.h3`
-  font-size: 1.6rem;
-  line-height: 42px;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
 
   @media screen and (min-width: 768px) {
     font-size: 1.8rem;
@@ -91,8 +90,8 @@ const WhyDesc = styled.p`
 `;
 
 const WhyHighlight = styled.p`
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 700;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;

@@ -57,7 +57,7 @@ const QuoteContent = styled.div`
 
   & > .author {
     margin-bottom: 12px;
-    font-weight: 600;
+    font-weight: 700;
   }
 `
 

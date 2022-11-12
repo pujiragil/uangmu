@@ -76,9 +76,8 @@ const Content = styled.div`
 `;
 
 const ContentTitle = styled.h3`
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 36px;
 
   @media screen and (min-width: 768px) {
     font-size: 42px;
