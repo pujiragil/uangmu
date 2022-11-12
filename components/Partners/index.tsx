@@ -80,7 +80,7 @@ export default function PartnersSection() {
     <Partners>
       <PartnersContainer>
         <PartnersWrapper>
-          <Title>Trusted Partners</Title>
+          <Title className="subheading">Trusted Partners</Title>
           <PartnersImageWrapper>
             <PatnersItems>
               <Image src="/fila.svg" />

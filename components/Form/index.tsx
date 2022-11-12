@@ -18,8 +18,7 @@ const FormInput = styled.input`
   color: #A9A547;
   background: transparent;
   border-radius: 6px;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1rem;
   font-weight: 400;
   outline: none;
 
@@ -46,9 +45,8 @@ const FormTextarea = styled.textarea`
   border: 1px solid #A9A547;
   color: #A9A547;
   padding: 20px 40px;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 22px;
   border-radius: 6px;
   outline: none;
   height: 120px;
@@ -79,8 +77,7 @@ const FormAgreement = styled.div`
 `
 
 const AgreementText = styled.p`
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1rem;
   font-weight: 400;
 `
 
@@ -153,9 +150,8 @@ const FormSubmit = styled.input`
   border-radius: 6px;
   background: #333215;
   color: #FAFAFA;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 24px;
   border: none;
   outline: none;
   cursor: pointer;

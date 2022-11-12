@@ -32,13 +32,11 @@
   `;
 
   const FaqTitle = styled.h2`
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 52px;
+    font-size: 2rem;
+    font-weight: 700;
 
     @media screen and (min-width: 768px) {
-      font-size: 54px;
-      line-height: 72px;
+      font-size: 2.5rem;
     }
   `;
 
@@ -68,15 +66,13 @@
   `;
 
   const Title = styled.h3`
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 42px;
+    font-size: 1.5rem;
+    font-weight: 700;
   `;
 
   const Desc = styled.p`
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 23px;
   `;
 
   const FaqButton = styled.button`

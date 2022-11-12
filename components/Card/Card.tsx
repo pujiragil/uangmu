@@ -92,9 +92,12 @@ const ContentTitle = styled.h3`
 `;
 
 const ContentDesc = styled.p`
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 23px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 
   @media screen and (min-width: 1024px) {
     width: 85%;
@@ -172,10 +175,10 @@ function Card({ primary, cardTitle, cardBg, cardImgLink }: CardProps) {
         <Content className="row">
           <Button primary={true}>
             <ButtonIcon src="/cloud.svg" />
-            <ButtonText>Download app</ButtonText>
+            <ButtonText className="sub-button">Download app</ButtonText>
           </Button>
           <Button primary={false}>
-            <ButtonText>Sign up</ButtonText>
+            <ButtonText className="sub-button">Sign up</ButtonText>
             <ButtonIcon src="/user-btn.svg" />
           </Button>
         </Content>

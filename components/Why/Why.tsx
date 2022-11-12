@@ -71,22 +71,32 @@ const Icon = styled.img`
 `;
 
 const WhyTitle = styled.h3`
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 42px;
   font-weight: 600;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.8rem;
+  }
 `;
 
 const WhyDesc = styled.p`
   width: 100%;
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 1rem;
   font-weight: 400;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 const WhyHighlight = styled.p`
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
   font-weight: 600;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 export default function Whys() {

@@ -40,9 +40,8 @@ const EmailWrapper = styled.div`
 
 const TitleEmail = styled.h3`
   color: #fff;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 36px; 
+  font-size: 1.5rem;
+  font-weight: 700;
 
   @media screen and (min-width: 768px) {
     font-size: 2rem;
@@ -71,9 +70,8 @@ const EmailField = styled.div`
 `
 
 const EmailInput = styled.input`
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 23px;
   text-align: center;
   width: 100%;
   padding: 20px;

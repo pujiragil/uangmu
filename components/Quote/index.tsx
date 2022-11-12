@@ -42,15 +42,14 @@ const QuoteItem = styled.div`
 `
 
 const QuoteIcon = styled.img`
-  width: 52px;
+  width: 40px;
   height: auto;
   object-fit: cover;
 `
 
 const QuoteContent = styled.div`
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 36px;
 
   & > .desc {
     margin-bottom: 24px;

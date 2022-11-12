@@ -107,19 +107,22 @@ const ServiceImage = styled.img`
 `;
 
 const ServiceTitle = styled.h2`
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 22px;
+  font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 const ServiceDesc = styled.p`
   font-size: 1rem;
-  line-height: 18px;
 `;
 
 const ServiceHighlight = styled.p`
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 23px;
-  font-weight: 600;
+  font-weight: 700;
 `;
 
 export default function ServiceSection() {
@@ -127,7 +130,7 @@ export default function ServiceSection() {
     <Service>
       <ServiceContainer>
         <ServiceWrapper>
-          <Title>How Does It Work</Title>
+          <Title className="subheading">How Does It Work</Title>
 
           <ServiceCardWrapper>
             <ServiceCard>

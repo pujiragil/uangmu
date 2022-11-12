@@ -48,8 +48,8 @@ export default function WhySection() {
       <WhyContainer>
         <WhyWrapper>
           <Content>
-            <Title>Why Uangmu</Title>
-            <Paragraph className="why">Please add a amount an account with whom you want to send your money and we will keep it very safe.</Paragraph>
+            <Title className="subheading">Why Uangmu</Title>
+            <Paragraph className="why subparagraph">Please add a amount an account with whom you want to send your money and we will keep it very safe.</Paragraph>
           </Content>
           
           <Whys />

@@ -58,20 +58,21 @@ const Content = styled.div`
 `
 
 const Title = styled.h3`
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 600;
-  line-height: 52px;
 
   @media screen and (min-width: 768px) {
-    font-size: 54px;
-    line-height: 72px;
+    font-size: 40px;
   }
 `
 
 const Paragraph = styled.p`
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1rem;
   font-weight: 400;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 `
 
 const SupportButton = styled.button`
@@ -82,10 +83,13 @@ const SupportButton = styled.button`
   background: #1B1717;
   color: #FAFAFA;
   padding: 20px 40px;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1rem;
   font-weight: 400;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 `
 
 const ImageWrapper = styled.div`

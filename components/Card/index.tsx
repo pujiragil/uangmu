@@ -47,10 +47,13 @@ interface DescProps {
 }
 
 const CardDesc = styled.p<DescProps>`
-  font-size: 18px;
-  line-height: 23px;
-  font-weight: ${({ subtitle }) => (subtitle ? "600" : "400")};
+  font-size: 1rem;
+  font-weight: ${({ subtitle }) => (subtitle ? "700" : "400")};
   text-transform: ${({ subtitle }) => (subtitle ? "uppercase" : "none")};
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 
   @media screen and (min-width: 1024px) {
     width: 50%;
@@ -68,7 +71,7 @@ export default function CardSection() {
             <CardDesc subtitle={true}>
               available at google and ios app store
             </CardDesc>
-            <Title className="half">Built for the next generation of small business</Title>
+            <Title className="half subheading">Built for the next generation of small business</Title>
             <CardDesc subtitle={false}>
               Hopscotch is an all-in-one payments platform where businesses can
               connect, transact, and grow together.

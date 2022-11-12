@@ -81,14 +81,16 @@ const Image = styled.img`
 `
 
 const Title = styled.h2`
-  font-size: 44px;
-  line-height: 72px;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    font-size: 2.5rem;
+  }
 `
 
 const Paragraph = styled.p`
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1rem;
   font-weight: 400;
 `
 

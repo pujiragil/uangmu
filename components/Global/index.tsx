@@ -1,14 +1,19 @@
 import styled from "styled-components";
 
 export const Title = styled.h1`
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 52px;
+  font-size: 2.5rem;
+  font-weight: 700;
+
+  &.subheading {
+    font-size: 2rem;
+  }
 
   @media screen and (min-width: 768px) {
-    font-size: 54px;
-    line-height: 72px;
+    font-size: 3rem;
+
+    &.subheading {
+      font-size: 2.5rem;
+    }
   }
 
   @media screen and (min-width: 1024px) {
@@ -23,13 +28,18 @@ export const Title = styled.h1`
 export const Paragraph = styled.p`
   font-weight: 400;
   font-size: 18px;
-  line-height: 23px;
+
+  &.subparagraph {
+    font-size: 1rem;
+  }  
 
   &.left {
     text-align: left;
   }
 
   @media screen and (min-width: 768px) {
+    font-size: 18px;
+
     &.half {
       width: 50%;
     }
@@ -68,12 +78,20 @@ export const Button = styled.button<ButtonProps>`
 `
 
 export const ButtonIcon = styled.img`
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
+
+  @media screen and (min-width: 768px) {
+    width: 28px;
+    height: 28px;
+  }
 `
 
 export const ButtonText = styled.p`
   font-size: 18px;
   font-weight: 400;
-  line-height: 23px;
+
+  &.sub-button {
+    font-size: 1rem;
+  }
 `
