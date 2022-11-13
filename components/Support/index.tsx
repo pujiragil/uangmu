@@ -73,6 +73,10 @@ const Paragraph = styled.p`
   @media screen and (min-width: 768px) {
     font-size: 1.1rem;
   }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.2rem;
+  }
 `
 
 const SupportButton = styled.button`
@@ -89,6 +93,10 @@ const SupportButton = styled.button`
 
   @media screen and (min-width: 768px) {
     font-size: 1.1rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.2rem;
   }
 `
 

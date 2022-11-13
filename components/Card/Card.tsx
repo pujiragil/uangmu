@@ -99,6 +99,10 @@ const ContentDesc = styled.p`
   @media screen and (min-width: 1024px) {
     width: 85%;
   }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.2rem;
+  }
 `;
 
 interface ImageWrapperProps {
@@ -127,7 +131,7 @@ const Image = styled.img`
 
   @media screen and (min-width: 1024px) {
     height: auto;
-    width: 80%;
+    width: 85%;
     object-fit: scale-down;
   }
 

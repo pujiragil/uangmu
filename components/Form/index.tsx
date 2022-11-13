@@ -21,6 +21,7 @@ const FormInput = styled.input`
   font-size: 1rem;
   font-weight: 400;
   outline: none;
+  transition: all 0.2s ease-in;
 
   &::placeholder {
     opacity: 1;
@@ -40,6 +41,10 @@ const FormInput = styled.input`
     width: calc(50% - 16px);
     font-size: 1.1rem;
   }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.2rem;
+  }
 `
 
 const FormTextarea = styled.textarea`
@@ -52,6 +57,7 @@ const FormTextarea = styled.textarea`
   outline: none;
   height: 120px;
   width: 100%;
+  transition: all 0.2s ease-in;
   background: transparent;
 
   &::placeholder {
@@ -72,6 +78,10 @@ const FormTextarea = styled.textarea`
   @media screen and (min-width: 768px) {
     font-size: 1.1rem;
   }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.2rem;
+  }
 `
 
 const FormAgreement = styled.div`
@@ -87,6 +97,10 @@ const AgreementText = styled.p`
 
   @media screen and (min-width: 768px) {
     font-size: 1.1rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.2rem;
   }
 `
 
@@ -167,6 +181,10 @@ const FormSubmit = styled.input`
 
   @media screen and (min-width: 768px) {
     font-size: 1.1rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.2rem;
   }
 `
 

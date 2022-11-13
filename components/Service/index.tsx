@@ -53,7 +53,7 @@ const ServiceCardWrapper = styled.div`
   }
 
   @media screen and (min-width: 1440px) {
-    gap: 100px;
+    gap: 60px;
   }
 `;
 
@@ -109,6 +109,10 @@ const ServiceImage = styled.img`
 const ServiceTitle = styled.h2`
   font-size: 1.2rem;
   font-weight: 700;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.4rem;
+  }
 `;
 
 const ServiceDesc = styled.p`
@@ -118,11 +122,19 @@ const ServiceDesc = styled.p`
     width: 70%;
     font-size: 1.1rem;
   }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const ServiceHighlight = styled.p`
   font-size: 1.1rem;
   font-weight: 700;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export default function ServiceSection() {

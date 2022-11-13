@@ -58,6 +58,10 @@ const CardDesc = styled.p<DescProps>`
   @media screen and (min-width: 1024px) {
     width: 50%;
   }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.2rem;
+  }
 `;
 
 

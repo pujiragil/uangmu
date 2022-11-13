@@ -58,6 +58,14 @@ export const Paragraph = styled.p`
       width: 40%;
     }
   }
+  
+  @media screen and (min-width: 1440px) {
+    font-size: 1.2rem;
+
+    &.subparagraph {
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 interface ButtonProps {
@@ -103,6 +111,14 @@ export const ButtonText = styled.p`
 
     &.sub-button {
       font-size: 1.1rem;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.2rem;
+
+    &.sub-button {
+      font-size: 1.2rem;
     }
   }
 `;

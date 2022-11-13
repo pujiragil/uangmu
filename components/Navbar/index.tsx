@@ -67,6 +67,10 @@ const NavItem = styled.a`
   @media screen and (min-width: 768px) {
     font-size: 1.1rem;
   }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.2rem;
+  }
 `
 
 const NavButtonWrapper = styled.div`
@@ -94,6 +98,10 @@ const NavButton = styled.button`
 
   @media screen and (min-width: 768px) {
     font-size: 1.1rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.2rem;
   }
 `
 

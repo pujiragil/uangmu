@@ -28,6 +28,10 @@ const WhyWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @media screen and (min-width: 1024px) {
+    gap: 3rem;
+  }
 `
 
 interface ContentProps {
