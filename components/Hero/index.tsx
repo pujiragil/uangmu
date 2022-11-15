@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Button, ButtonIcon, ButtonText, Paragraph, Title } from "../Global";
 
@@ -35,7 +36,7 @@ const HeroWrapper = styled.div`
   }
 `;
 
-const HeroContent = styled.div`
+const HeroContent = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -109,7 +110,7 @@ const HeroImageWrapper = styled.div`
   justify-content: center;
 `;
 
-const HeroImage = styled.img`
+const HeroImage = styled(motion.img)`
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -134,7 +135,7 @@ export default function HeroSection() {
     <Hero>
       <HeroContainer>
         <HeroWrapper>
-          <HeroContent>
+          <HeroContent initial={{ x: -500, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
             <Title>Easy way to make online payments and secure</Title>
             <Paragraph className="half">
               Pay and get paid in real-time with zero fees. Secure, streamlined,
@@ -160,7 +161,7 @@ export default function HeroSection() {
           </HeroContent>
 
           <HeroImageWrapper>
-            <HeroImage src="/images/hero.png" />
+            <HeroImage initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5 }} src="/images/hero.png" />
           </HeroImageWrapper>
         </HeroWrapper>
       </HeroContainer>
